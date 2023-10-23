@@ -1,0 +1,89 @@
+.container {
+  display: grid;
+  gap: 2rem;
+  margin-inline: auto;
+  max-width: 69.375rem;
+}
+
+.card {
+  text-align: center;
+  justify-self: center;
+  background-color: hsl(var(--clr-neutral-100));
+  color: hsl(var(--clr-primary-700));
+ 
+  padding-block: 2.5rem;
+  border-radius: var(--border-radius-1);
+  width: 100%;
+  height: 31.75rem;
+
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.25);
+}
+
+.card[datatype="colored"] {
+  color: hsl(var(--clr-neutral-100));
+  background-color: hsl(var(--clr-accent-400));
+  background-repeat: no-repeat;
+  background-image: url(../../assets//home/bg-pattern-pricing.svg);
+  background-position: bottom;
+}
+
+.card[datatype="colored"] .features {
+  color: hsl(var(--clr-neutral-100));
+}
+
+h2 {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+}
+
+.billing {
+  margin-block: 2.5rem 3.5rem;
+}
+
+.billing p {
+  font-size: var(--fs-950);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+  line-height: 4rem;
+}
+
+.features {
+  color: hsl(var(--clr-neutral-grey));
+  margin-bottom: 2rem;
+}
+
+/* media query's */
+/* tablet */
+@media (min-width: 45em) and (max-width: 68em) {
+  .container {
+    gap: 1.5rem;
+  }
+  .card {
+    text-align: start;
+    padding-inline: 3rem;
+    height: auto;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16vw;
+  }
+  .billing {
+    margin-block: 0 1.5rem;
+  }
+  .features {
+    margin-top: 5%;
+
+  }
+
+  .card[datatype="colored"] {
+    background-position: 135%;
+  }
+}
+
+@media (min-width: 68em) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.87;
+  }
+}

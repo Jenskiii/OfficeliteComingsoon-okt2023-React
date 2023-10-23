@@ -1,0 +1,83 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    padding: 1.2em 1em;
+    padding-right: 1.4rem;
+    outline: 0;
+}
+
+/* flex grow 1 puts everything else as much as possible to the right */
+.value{
+    flex-grow: 1;
+    font-weight: var(--fw-bold);
+    color: hsl(var(--clr-primary-700));
+}
+
+.caret{
+    cursor: pointer;
+    color: hsl(var(--clr-accent-400));
+    font-size: var(--fs-400);
+    translate: 0% 8%;
+    transition:  275ms linear;
+}
+
+.caret.open{
+    rotate: 180deg;
+}
+
+.caret:is(:hover,:focus){
+    color: hsl(var(--clr-accent-200));
+}
+
+
+.options{
+    position: absolute;
+    list-style: none;
+    display: none; 
+    border: .05em solid hsl(var(--clr-neutral-grey) / .15);
+    border-radius: .5em;
+    padding: 1.5em 2em;
+    width: 100%;
+    left: 0;
+    top: calc(100% + .25em);
+    background-color: hsl(var(--clr-neutral-100));
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.75);
+    z-index: 100;
+}
+/* adds border to bottom but not for last child */
+.options > *:where(:not(:last-child)){
+    border-bottom: .05em solid hsl(var(--clr-neutral-grey) / .25);
+}
+
+.options.show{
+    display: block;
+}
+
+/* single option */
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(var(--clr-primary-700));
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    padding-block: 1em;
+}
+
+.checkmark{
+    display: none;
+    color: hsl(var(--clr-accent-400));
+    transition: color 275ms linear;
+    width: 1.7rem;
+}
+
+.option.selected.checkmark{
+    display: block;
+}
+
+.checkmark.show{
+    display: block;
+}

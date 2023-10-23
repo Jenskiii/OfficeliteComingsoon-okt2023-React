@@ -1,0 +1,171 @@
+/* HEADER */
+.header{
+    display: grid;
+    position: relative;
+    overflow: hidden;
+}
+
+.background__pattern{
+    position: absolute;
+    align-self: start;
+    justify-self: center;
+    top: -18%;
+    width: 70%;
+    height: 140%;
+    background-image: url(../../assets/home/bg-pattern-header.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 100px center;
+}
+
+.container{
+    display: grid;
+}
+
+.company-logo{
+    justify-self: center;   
+    padding-block: 3rem 5rem;
+}
+
+/* HERO */
+.hero{
+    display: grid;
+    text-align: center;
+}
+/* text widths */
+.hero h1{
+    max-width: 15ch;
+}
+
+.hero p{
+    max-width: 51ch;
+}
+/* button box shadow */
+.hero a{
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.25);
+}
+/* media query's */
+@media (max-width: 45em){
+    .hero__img{
+        justify-self: center;
+        max-width: 50%;
+    }
+
+    .hero h1,.hero p{
+       margin-inline: auto;
+    }
+}
+
+@media(min-width: 45em){
+    .background__pattern{
+        justify-self: end;
+        right: -35%;
+        width: 90%;
+        top: -55%;
+    }
+
+    .company-logo{
+        justify-self: start;
+        padding-block: 5rem 6.38rem;
+    }
+
+    .hero{
+        text-align: left;
+    }
+
+    .hero__img{
+        order: 1;
+    }
+}
+
+@media(min-width: 77em){
+    .hero__img{
+        max-width: 29.5625rem;
+    }
+
+    .background__pattern{
+        top: -45%;
+        right: -20%;
+        width: 70%;
+    }
+}
+
+/* price-plan */
+.price-plan{
+    display: grid;
+    position: relative;
+    height: 56.75rem;
+}
+
+.price-plan__wrapper{
+    position: absolute;
+    justify-self: center;
+    top: 10%;
+}
+
+@media (min-width: 45em){
+    .price-plan{
+        height: 39.875rem;
+    }
+
+    .price-plan__wrapper{
+        top: 13%;
+    }
+}
+
+@media (min-width: 68em){
+    .price-plan{
+        height: 27.375rem;
+    }
+
+    .price-plan__wrapper{
+        top: 40%;
+    }
+}
+
+
+/* Footer */
+.footer{
+    background-image: url(../../assets/home/bg-pattern-footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    height: 78rem;
+    background-color: hsl(var(--clr-primary-800));
+}
+
+.footer__wrapper{
+    display: grid;
+    justify-content: center;
+}
+
+.footer__button{
+    justify-self: center;
+    margin-block:2.5rem 6.5rem;
+}
+
+/* media query's */
+@media (min-width: 45em){
+    .footer{
+        height: 61.625rem;
+        background-size: 100%;
+        background-position: top 250px center ;
+    }
+}
+
+@media (min-width: 68em){
+    .footer{
+        height: 37.6875rem;
+        background-position: right 400% top 35%;
+        background-size: 95%;
+    }
+    .footer__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5.69rem;
+    }
+}
+
