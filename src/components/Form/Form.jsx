@@ -1,5 +1,5 @@
 import { useState, useMemo} from "react";
-import { Select } from "../Select/Select";
+import { Select } from "../Select/select";
 import { checkEmail, checkName, checkCompany, checkPhone } from "./validators";
 import styles from "./form.module.css";
 // images

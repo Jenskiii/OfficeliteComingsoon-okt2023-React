@@ -1,5 +1,5 @@
-import { Timer } from "../../components/Timer/Timer.jsx"
-import { Form } from "../../components/Form/Form";
+import { Timer } from "../../components/Timer/timer"
+import { Form } from "../../components/Form/form";
 import { Link } from "react-router-dom";
 // images
 import Logo from "../../assets/shared/logo.svg";

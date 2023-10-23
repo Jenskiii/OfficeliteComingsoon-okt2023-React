@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./timer.module.css";
 
-export default function Timer({theme}) {
+export function Timer({theme}) {
   let date = "27 jan 2024";
 
   const [timerDays, setTimerDays] = useState("00");
