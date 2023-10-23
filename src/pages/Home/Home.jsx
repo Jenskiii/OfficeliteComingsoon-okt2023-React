@@ -1,4 +1,4 @@
-import { PricePlan } from "../../components/PricePlan/pricePlan";
+import { PricePlan } from "../../components/PricePlan/PricePlan";
 import { Timer } from "../../components/Timer/timer";
 import { Link } from "react-router-dom"
 // images
