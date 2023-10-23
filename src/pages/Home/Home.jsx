@@ -1,5 +1,5 @@
 import { PricePlan } from "../../components/PricePlan/PricePlan";
-import { Timer } from "../../components/Timer/Timer";
+import { Timer } from "../../components/Timer/Timer.jsx";
 import { Link } from "react-router-dom"
 // images
 import Logo from "../../assets/shared/logo.svg";

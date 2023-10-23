@@ -1,4 +1,4 @@
-import { Timer } from "../../components/Timer/Timer"
+import { Timer } from "../../components/Timer/Timer.jsx"
 import { Form } from "../../components/Form/Form";
 import { Link } from "react-router-dom";
 // images
